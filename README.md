@@ -42,8 +42,8 @@
 ## Games
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/varundevarajrvu/varundevarajrvu/output/snake-dark.svg">
-  <img src="https://raw.githubusercontent.com/varundevarajrvu/varundevarajrvu/output/snake-light.svg" alt="A snake game animation eating through my GitHub contribution graph" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/varundevarajrvu/varundevarajrvu/output/commit-invaders-dark.svg">
+  <img src="https://raw.githubusercontent.com/varundevarajrvu/varundevarajrvu/output/commit-invaders.svg" alt="A Space Invaders-style animation where a ship fires lasers at my GitHub contribution squares" width="100%">
 </picture>
 
 ## Contact
