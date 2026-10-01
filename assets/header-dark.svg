@@ -1,31 +1,34 @@
 <svg width="760" height="110" viewBox="0 0 760 110" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Varun Devaraj — On-Device AI/LLM Systems Engineer. Offline-first. Ships things.">
   <title>Varun Devaraj — On-Device AI/LLM Systems Engineer</title>
   <style>
-    .name { font: 700 34px ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas, monospace; fill: #e7e9ee; }
+    .name { font: 700 34px ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas, monospace; fill: url(#shimmer); }
     .tag  { font: 500 18px ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas, monospace; fill: #5eead4; }
     .cursor { fill: #5eead4; }
   </style>
 
-  <clipPath id="nameReveal">
-    <rect x="0" y="0" height="50" width="0">
-      <animate attributeName="width" from="0" to="430" dur="1.6s" begin="0.1s" fill="freeze" calcMode="spline" keySplines="0.3 0 0.2 1" keyTimes="0;1" values="0;430"/>
-    </rect>
-  </clipPath>
+  <defs>
+    <linearGradient id="shimmer" gradientUnits="userSpaceOnUse" x1="-150" y1="0" x2="0" y2="0">
+      <stop offset="0%"  stop-color="#e7e9ee"/>
+      <stop offset="45%" stop-color="#e7e9ee"/>
+      <stop offset="50%" stop-color="#5eead4"/>
+      <stop offset="55%" stop-color="#e7e9ee"/>
+      <stop offset="100%" stop-color="#e7e9ee"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-150,0; 750,0; 750,0" keyTimes="0; 0.25; 1" dur="4s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
 
-  <g clip-path="url(#nameReveal)">
-    <text x="4" y="46" class="name">Varun Devaraj</text>
-  </g>
+  <text x="4" y="46" class="name">Varun Devaraj</text>
 
   <rect x="432" y="12" width="3" height="36" class="cursor">
-    <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.4;0.5;0.9;1" dur="1s" begin="0.1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.4;0.5;0.9;1" dur="1s" begin="0s" repeatCount="indefinite"/>
   </rect>
 
   <text x="6" y="84" class="tag">
-    <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.08;0.42;0.5;1" dur="8s" begin="1.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.08;0.42;0.5;1" dur="8s" begin="0.3s" repeatCount="indefinite"/>
     On-Device AI/LLM Systems Engineer
   </text>
   <text x="6" y="84" class="tag">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5;0.58;0.92;1" dur="8s" begin="1.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5;0.58;0.92;1" dur="8s" begin="0.3s" repeatCount="indefinite"/>
     Offline-first. Ships things.
   </text>
 </svg>
