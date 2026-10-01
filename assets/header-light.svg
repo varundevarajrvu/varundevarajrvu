@@ -1,14 +1,19 @@
-<svg width="760" height="110" viewBox="0 0 760 110" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Varun Devaraj — On-Device AI/LLM Systems Engineer. Offline-first. Ships things.">
+<svg width="920" height="230" viewBox="0 0 920 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Varun Devaraj — On-Device AI/LLM Systems Engineer. Offline-first. Ships things.">
   <title>Varun Devaraj — On-Device AI/LLM Systems Engineer</title>
   <style>
-    .name   { font: 700 34px ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas, monospace; }
-    .tag    { font: 500 18px ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas, monospace; fill: #2563eb; }
-    .cursor { fill: #2563eb; }
+    .name   { font: 700 54px ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas, monospace; }
+    .tag    { font: 500 26px ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas, monospace; fill: #5eead4; }
+    .cursor { fill: #5eead4; }
   </style>
 
   <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="920" y2="230" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#312e81"/>
+      <stop offset="50%"  stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#0d9488"/>
+    </linearGradient>
     <filter id="glow" x="-30%" y="-100%" width="160%" height="300%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="blur"/>
@@ -16,41 +21,44 @@
     </filter>
   </defs>
 
+  <rect width="920" height="230" rx="24" fill="url(#bg)"/>
+  <rect width="920" height="230" rx="24" fill="none" stroke="#ffffff" stroke-opacity="0.12"/>
+
   <!-- soft breathing glow behind the name -->
-  <text x="4" y="46" class="name" fill="#2563eb" filter="url(#glow)">
+  <text x="40" y="112" class="name" fill="#60a5fa" filter="url(#glow)">
     <animate attributeName="opacity" values="0.35;0.75;0.35" keyTimes="0;0.5;1" dur="2.6s" repeatCount="indefinite"/>
     Varun Devaraj
   </text>
 
   <!-- chromatic-aberration ghosts, flash only during the glitch burst (two ~200ms pulses at 2.0s and 2.2s) -->
-  <text x="-3" y="46" class="name" fill="#22d3ee" opacity="0">
+  <text x="29" y="112" class="name" fill="#22d3ee" opacity="0">
     <animate attributeName="opacity" values="0;0;1;0;1;0;0" keyTimes="0;0.40;0.42;0.44;0.46;0.48;1" dur="5s" repeatCount="indefinite"/>
     Varun Devaraj
   </text>
-  <text x="11" y="46" class="name" fill="#f472b6" opacity="0">
+  <text x="51" y="112" class="name" fill="#f472b6" opacity="0">
     <animate attributeName="opacity" values="0;0;1;0;1;0;0" keyTimes="0;0.40;0.42;0.44;0.46;0.48;1" dur="5s" repeatCount="indefinite"/>
     Varun Devaraj
   </text>
 
   <!-- crisp foreground text, dips + jitters briefly during the same burst so the split reads clearly -->
-  <text x="4" y="46" class="name" fill="#16181d">
+  <text x="40" y="112" class="name" fill="#f8fafc">
     <animate attributeName="opacity" values="1;1;0.4;1;0.4;1;1" keyTimes="0;0.40;0.42;0.44;0.46;0.48;1" dur="5s" repeatCount="indefinite"/>
     <animateTransform attributeName="transform" type="translate"
-      values="0,0; -4,0; 3,0; -3,0; 0,0; 0,0"
+      values="0,0; -6,0; 5,0; -5,0; 0,0; 0,0"
       keyTimes="0; 0.40; 0.42; 0.44; 0.46; 1"
       dur="5s" repeatCount="indefinite"/>
     Varun Devaraj
   </text>
 
-  <rect x="432" y="12" width="3" height="36" class="cursor">
+  <rect x="716" y="56" width="6" height="58" class="cursor">
     <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.4;0.5;0.9;1" dur="1s" begin="0s" repeatCount="indefinite"/>
   </rect>
 
-  <text x="6" y="84" class="tag">
+  <text x="43" y="172" class="tag">
     <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.08;0.42;0.5;1" dur="8s" begin="0.3s" repeatCount="indefinite"/>
     On-Device AI/LLM Systems Engineer
   </text>
-  <text x="6" y="84" class="tag">
+  <text x="43" y="172" class="tag">
     <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5;0.58;0.92;1" dur="8s" begin="0.3s" repeatCount="indefinite"/>
     Offline-first. Ships things.
   </text>

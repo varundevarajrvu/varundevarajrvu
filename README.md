@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-  <img src="assets/header-light.svg" alt="Varun Devaraj — On-Device AI/LLM Systems Engineer" width="520">
+  <img src="assets/header-light.svg" alt="Varun Devaraj — On-Device AI/LLM Systems Engineer" width="100%">
 </picture>
 
 <!-- $ whoami --local
