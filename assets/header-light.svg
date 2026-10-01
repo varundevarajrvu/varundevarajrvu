@@ -1,23 +1,46 @@
 <svg width="760" height="110" viewBox="0 0 760 110" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Varun Devaraj — On-Device AI/LLM Systems Engineer. Offline-first. Ships things.">
   <title>Varun Devaraj — On-Device AI/LLM Systems Engineer</title>
   <style>
-    .name { font: 700 34px ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas, monospace; fill: url(#shimmer); }
-    .tag  { font: 500 18px ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas, monospace; fill: #2563eb; }
+    .name   { font: 700 34px ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas, monospace; }
+    .tag    { font: 500 18px ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas, monospace; fill: #2563eb; }
     .cursor { fill: #2563eb; }
   </style>
 
   <defs>
-    <linearGradient id="shimmer" gradientUnits="userSpaceOnUse" x1="-150" y1="0" x2="0" y2="0">
-      <stop offset="0%"  stop-color="#16181d"/>
-      <stop offset="45%" stop-color="#16181d"/>
-      <stop offset="50%" stop-color="#7aa2ff"/>
-      <stop offset="55%" stop-color="#16181d"/>
-      <stop offset="100%" stop-color="#16181d"/>
-      <animateTransform attributeName="gradientTransform" type="translate" values="-150,0; 750,0; 750,0" keyTimes="0; 0.25; 1" dur="4s" repeatCount="indefinite"/>
-    </linearGradient>
+    <filter id="glow" x="-30%" y="-100%" width="160%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+      </feMerge>
+    </filter>
   </defs>
 
-  <text x="4" y="46" class="name">Varun Devaraj</text>
+  <!-- soft breathing glow behind the name -->
+  <text x="4" y="46" class="name" fill="#2563eb" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.35;0.75;0.35" keyTimes="0;0.5;1" dur="2.6s" repeatCount="indefinite"/>
+    Varun Devaraj
+  </text>
+
+  <!-- chromatic-aberration ghosts, flash only during the glitch burst (two ~200ms pulses at 2.0s and 2.2s) -->
+  <text x="-3" y="46" class="name" fill="#22d3ee" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;0;1;0;0" keyTimes="0;0.40;0.42;0.44;0.46;0.48;1" dur="5s" repeatCount="indefinite"/>
+    Varun Devaraj
+  </text>
+  <text x="11" y="46" class="name" fill="#f472b6" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;0;1;0;0" keyTimes="0;0.40;0.42;0.44;0.46;0.48;1" dur="5s" repeatCount="indefinite"/>
+    Varun Devaraj
+  </text>
+
+  <!-- crisp foreground text, dips + jitters briefly during the same burst so the split reads clearly -->
+  <text x="4" y="46" class="name" fill="#16181d">
+    <animate attributeName="opacity" values="1;1;0.4;1;0.4;1;1" keyTimes="0;0.40;0.42;0.44;0.46;0.48;1" dur="5s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate"
+      values="0,0; -4,0; 3,0; -3,0; 0,0; 0,0"
+      keyTimes="0; 0.40; 0.42; 0.44; 0.46; 1"
+      dur="5s" repeatCount="indefinite"/>
+    Varun Devaraj
+  </text>
 
   <rect x="432" y="12" width="3" height="36" class="cursor">
     <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.4;0.5;0.9;1" dur="1s" begin="0s" repeatCount="indefinite"/>
