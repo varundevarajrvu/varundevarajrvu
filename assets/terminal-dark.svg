@@ -1,0 +1,38 @@
+<svg width="560" height="170" viewBox="0 0 560 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Terminal: whoami --local. role: on-device AI/LLM systems engineer. base: RV University, Bengaluru. runtime: offline-first, no cloud dependency. status: building Dhristi for SIH 26171.">
+  <title>whoami --local</title>
+  <style>
+    .mono  { font: 500 15px ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas, monospace; }
+    .prompt{ fill: #5eead4; }
+    .key   { fill: #8b949e; }
+    .val   { fill: #e7e9ee; }
+    .cursor{ fill: #5eead4; }
+  </style>
+  <rect width="560" height="170" rx="8" fill="#0d1117" stroke="#30363d"/>
+
+  <text x="18" y="30" class="mono prompt" opacity="0">$ whoami --local
+    <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur="0.2s" begin="0.2s" fill="freeze"/>
+  </text>
+
+  <text x="18" y="60" class="mono" opacity="0"><tspan class="key">role</tspan><tspan class="val" x="110">on-device AI/LLM systems engineer</tspan>
+    <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur="0.2s" begin="0.7s" fill="freeze"/>
+  </text>
+
+  <text x="18" y="86" class="mono" opacity="0"><tspan class="key">base</tspan><tspan class="val" x="110">RV University, Bengaluru</tspan>
+    <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur="0.2s" begin="1.2s" fill="freeze"/>
+  </text>
+
+  <text x="18" y="112" class="mono" opacity="0"><tspan class="key">runtime</tspan><tspan class="val" x="110">offline-first · no cloud dependency</tspan>
+    <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur="0.2s" begin="1.7s" fill="freeze"/>
+  </text>
+
+  <text x="18" y="138" class="mono" opacity="0"><tspan class="key">status</tspan><tspan class="val" x="110">building Dhristi for SIH 26171</tspan>
+    <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur="0.2s" begin="2.2s" fill="freeze"/>
+  </text>
+
+  <text x="18" y="160" class="mono prompt" opacity="0">$
+    <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur="0.01s" begin="2.7s" fill="freeze"/>
+  </text>
+  <rect x="30" y="148" width="9" height="16" class="cursor" opacity="0">
+    <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.4;0.5;0.9;1" dur="1s" begin="2.7s" repeatCount="indefinite"/>
+  </rect>
+</svg>
